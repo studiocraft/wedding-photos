@@ -1,0 +1,23 @@
+- name: LinkedIn
+  slug: linkedin
+  url: https://linkedin.com/in/bryancolosky
+
+- name: Twitter
+  slug: twitter
+  url: https://twitter.com/bryancolosky
+#
+# - name: GitHub
+#   slug: github
+#   url: https://github.com/bryancolosky
+#
+# - name: Medium
+#   slug: medium
+#   url: https://medium.com/@_bcolosky
+#
+# - name: Google+
+#   slug: google-plus
+#   url: https://plus.google.com/116957574136260524144/
+
+- name: Instagram
+  slug: instagram
+  url: https://plus.google.com/116957574136260524144/

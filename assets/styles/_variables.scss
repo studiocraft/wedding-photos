@@ -1,0 +1,30 @@
+// Media Queries
+$mobile:    "min-width: 400px" !default;
+$phablet:   "min-width: 550px" !default;
+$tablet:    "min-width: 750px" !default;
+$desktop:   "min-width: 1000px" !default;
+$desktophd: "min-width: 1200px" !default;
+
+// Base Units
+$base-font-size:   1.4em !default;
+
+// Colors
+$brand:  #00aeff !default;
+$white:  #fff !default;
+$black:  #111 !default;
+$gray:   #555 !default;
+
+
+$body-bg:    $white !default;
+
+//Type
+$base-font-family: serif;
+$headings-font-family: "ambroise-std",serif;
+
+$text-color: $gray;
+
+$base-font-weight:     300 !default;
+$headings-font-weight: 700 !default;
+
+// Warnings
+$not-integer-txt: ' value breaks vertical rhythm. Use an integer (whole number) for $lines.';

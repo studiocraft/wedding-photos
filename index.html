@@ -1,0 +1,15 @@
+---
+layout: default
+title: Bryan &amp; Melda
+slug: mad
+---
+<section class="wrapper">
+  <div class="grid">
+    <div class="grid-sizer"></div>
+    {% for img in site.data.photography limit:300 %}
+    <div class="grid-item">
+      <img src='https://dl.dropboxusercontent.com/u/44758112/germany-wedding/{{ img.name }}.jpg' alt="{{ img.name }}.jpg" title="{{ img.name }}.jpg" data-action="zoom">
+    </div>
+    {% endfor %}
+  </div>
+</section>

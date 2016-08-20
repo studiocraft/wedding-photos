@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html id="wedding" class="locked" lang="en">
+  <head>
+  {% include head.html %}
+  </head>
+  <body id="{{ page.slug }}">
+    <div id="loaderOverlay">
+      <p class="animated pulse infinite text-center">Loading ...</p>
+    </div>
+    <main id="content">
+      {% include header.html %}
+      {{ content }}
+      {% include footer.html %}
+    </main>
+  </body>
+</html>
