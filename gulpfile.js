@@ -175,7 +175,7 @@ var icons = (function() {
                   developerURL: "http://studiocraft.cc/",
                   background: config.background,
                   path: 'assets/' + config.path,
-                  url: "http://ipsosmadtech.com/",
+                  url: "http://studiocraft.cc/wedding-photos",
                   display: "standalone",
                   orientation: "landscape",
                   version: 1.0,
