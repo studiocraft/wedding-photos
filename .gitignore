@@ -5,7 +5,8 @@ stats
 
 # FAVICONS
 #
-assets/images/favicons/**
+assets/images/favicons/*.src.ai
+assets/images/favicons/*.src.png
 
 # SASS
 #
@@ -57,7 +58,3 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
-
-# EXCLUSIONS
-!assets/images/favicons/*.src.png
-!assets/images/favicons/*.src.ai
