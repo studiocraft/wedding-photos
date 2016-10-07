@@ -4,12 +4,21 @@ title: Bryan &amp; Melda
 slug: mad
 ---
 <section class="wrapper">
-  <div class="grid">
-    <div class="grid-sizer"></div>
-    {% for img in site.data.photography limit:300 %}
-    <div class="grid-item">
-      <img src='https://dl.dropboxusercontent.com/u/44758112/germany-wedding/{{ img.name }}.jpg' alt="{{ img.name }}.jpg" title="{{ img.name }}.jpg" data-action="zoom">
-    </div>
+  <div class="gallery grid" itemscope itemtype="http://schema.org/ImageGallery">
+    {% for img in site.data.photography limit: null %}
+    <figure class="grid-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="https://dl.dropboxusercontent.com/u/44758112/germany-wedding/{{ img.name }}.jpg" itemprop="contentUrl" data-size="{{ img.w }}x{{ img.h }}">
+        <img src="https://dl.dropboxusercontent.com/u/44758112/germany-wedding/{{ img.name }}.jpg" itemprop="thumbnail" alt="Image description" />
+      </a>
+      <meta itemprop="width" content="{{ img.w }}">
+      <meta itemprop="height" content="{{ img.h }}">
+      <figcaption itemprop="caption description">
+          {{ img.name }}
+          <span itemprop="copyrightHolder">Photo: {{ img.copyright }}</span>
+      </figcaption>
+    </figure>
     {% endfor %}
   </div>
+  <div class="grid-sizer"></div>
 </section>
+{% include photoswipe.html %}
